@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Trang chủ</title>
+  </head>
+  <body>
+    <h1><a href="./formAddUser">Add user</a></h1>
+    <table>
+      <thead>
+        <tr>
+          <th>#</th>
+          <th>user name</th>
+          <th>pass</th>
+          <th>avatar</th>
+          <th>trạng thái</th>
+          <th>công cụ</th>
+        </tr>
+      </thead>
+      <tbody>
+        <% dataUser.map((item) => { %>
+        <tr>
+          <td><%= item.ur_id %></td>
+          <td><%= item.ur_name %></td>
+          <td><%= item.ur_pass %></td>
+          <td><%= item.ur_avatar %></td>
+          <td><%= item.ur_status %></td>
+          <td>
+            <a href="./user/<%= item.ur_id %> ">chi tiết</a>
+            <a href="./delete-user/<%= item.ur_id %> ">Xóa</a>
+          </td>
+        </tr>
+        <% }) %>
+      </tbody>
+    </table>
+  </body>
+</html>

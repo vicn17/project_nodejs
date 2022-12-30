@@ -1,0 +1,26 @@
+{
+  "name": "js_adv",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/app.js",
+  "scripts": {
+    "start": "nodemon --exec babel-node src/app",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "NhutVi",
+  "license": "ISC",
+  "dependencies": {
+    "core-js": "^3.27.0",
+    "dotenv": "16.0.3",
+    "ejs": "^3.1.8",
+    "express": "^4.18.2",
+    "mongoose": "^6.8.1",
+    "mysql2": "2.3.3",
+    "nodemon": "^2.0.20"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.20.7",
+    "@babel/node": "^7.20.7",
+    "@babel/preset-env": "^7.20.2"
+  }
+}
