@@ -19,6 +19,9 @@ configViewEngine(app);
 //* import router
 require("./routes/router").default(app, router);
 
+//* import api router
+require("./routes/api").default(app, router);
+
 app.listen(port, () => {
   console.log(`Example app listening on port: http://localhost:${port}`);
 });
